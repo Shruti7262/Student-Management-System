@@ -1,4 +1,4 @@
-# Student Management API
+# Student Management System API
 A simple FastAPI-based backend service for managing student data, connected to MongoDB Atlas for data storage. The API provides CRUD operations for students, allowing you to create, retrieve, update, and delete student records.
 
 ## Features
