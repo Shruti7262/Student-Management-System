@@ -6,7 +6,6 @@ from pymongo import MongoClient
 from motor.motor_asyncio import AsyncIOMotorClient
 from bson import ObjectId
 
-from test import str_objectid
 
 
 app = FastAPI()
@@ -52,10 +51,10 @@ class StudentCreateResponse(BaseModel):
     id: str
 
 
-def generate_student_id():
-   if isinstance(id, ObjectId):
-       return str(id)
-   return id
+def str_objectid(id):
+    if isinstance(id, ObjectId):
+        return str(id)
+    return id
 
 
 @app.post("/students",
