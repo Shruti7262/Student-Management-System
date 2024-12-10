@@ -11,7 +11,7 @@ from bson import ObjectId
 app = FastAPI()
 
 
-MONGODB_URI = "mongodb+srv://shrutijain7262:ET91uOhMLgmsmebb@studentdata.2n47h.mongodb.net/"
+MONGODB_URI = "mongodb+srv://<username>:<db_password>@studentdata.2n47h.mongodb.net/"
 
 
 client = AsyncIOMotorClient(MONGODB_URI)
